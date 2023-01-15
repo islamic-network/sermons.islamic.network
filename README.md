@@ -17,3 +17,9 @@ This is provided in the hope that it may be useful in spreading the beautiful wo
   -- Surah Ibrahim, Ayah 24 (14:24)
 
 If you would like to add your sermons to the CDN or API, please reach out via https://community.islamic.network or support@islamic.network.
+
+
+## Development
+```
+docker run -it -v $(pwd)/.:/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve --watch --drafts
+```
