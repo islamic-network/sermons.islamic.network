@@ -1,0 +1,9 @@
+{% for item in site.data.navigation %}
+    <a href="{{ item.link }}" class="{% if page.url == item.link %} border-green-500 text-gray-900 {% endif %} {% if page.url != item.link %} border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 {% endif %} inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+       aria-current="page"
+       {% if item.window == "new" %}target="_blank"{% endif %}
+    >
+        {{ item.name }}
+    </a>
+{% endfor %}
+

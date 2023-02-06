@@ -21,5 +21,5 @@ If you would like to add your sermons to the CDN or API, please reach out via ht
 
 ## Development
 ```
-docker run -it -v $(pwd)/.:/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve --watch --drafts
+docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
