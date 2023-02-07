@@ -7,5 +7,5 @@ meta:
 ---
 
 <div class="px-4 py-2 sm:px-0">
-    ...
+    
 </div>

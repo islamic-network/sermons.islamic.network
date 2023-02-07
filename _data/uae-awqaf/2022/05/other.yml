@@ -1,0 +1,6 @@
+sermons:
+    - { title: 'We made you peoples and tribes', date: { iso8601: '2022-05-02T00:00:00+04:00', month: { name: May, shortname: May, number: '05' }, day: { name: Monday, shortname: Mon, number: '02' }, year: '2022' }, type: other, source: uae-awqaf, editions: [{ language: ar, format: mp3, url: 'https://cdn.islamic.network/sermons/uae-awqaf/mp3/2022-05-02-ar-We_made_you_peoples_and_tribes_.mp3' }, { language: ur, format: mp3, url: 'https://cdn.islamic.network/sermons/uae-awqaf/mp3/2022-05-02-ur-We_made_you_peoples_and_tribes_.mp3' }, { language: en, format: mp3, url: 'https://cdn.islamic.network/sermons/uae-awqaf/mp3/2022-05-02-en-We_made_you_peoples_and_tribes_.mp3' }, { language: en, format: doc, url: 'https://cdn.islamic.network/sermons/uae-awqaf/doc/2022-05-02-en-We_made_you_peoples_and_tribes_.doc' }, { language: en, format: pdf, url: 'https://cdn.islamic.network/sermons/uae-awqaf/pdf/2022-05-02-en-We_made_you_peoples_and_tribes_.pdf' }] }
+month:
+    name: May
+    shortname: May
+    number: '05'
