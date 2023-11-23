@@ -2,9 +2,9 @@
 
 This repo hosts the static sermons API served at https://sermons.islamic.network/api.
 
-It serves static json files with information URLs to sermons hosted on the Islamic Network CDN.
+It serves static json files with URLs to sermons hosted on the Islamic Network CDN.
 
-This project began with making the UAE Awqaf sermons available for programmatic use as the actual Awqaf websites allows 
+This project began with making the UAE Awqaf sermons available for programmatic use as the actual Awqaf website allows 
 for no way to do this and it's sometimes unavailable.
 
 The API is produced from the code in https://github.com/islamic-network/uae-awqaf-khutba-downloader.
