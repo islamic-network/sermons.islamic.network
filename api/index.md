@@ -37,7 +37,7 @@ which is essentially a traversable map of the khutba files on the CDN.
     <br />
     To get all non-Friday (Eid, for example) UAE Awqaf khutbas for 2021: <a href="/api/uae-awqaf/2021/other.json" target="_blank" class="text-green-700">https://sermons.islamic.network/api/uae-awqaf/2021/other.json</a>. 
     <br />
-    To get all Friday (Eid, for example) UAE Awqaf khutbas for the month of July in 2021: <a href="/api/uae-awqaf/2021/07/friday.json" target="_blank" class="text-green-700">https://sermons.islamic.network/api/uae-awqaf/2021/07/friday.json</a>.
+    To get all Friday UAE Awqaf khutbas for the month of July in 2021: <a href="/api/uae-awqaf/2021/07/friday.json" target="_blank" class="text-green-700">https://sermons.islamic.network/api/uae-awqaf/2021/07/friday.json</a>.
     <br />
     To get all non-Friday (Eid, for example) UAE Awqaf khutbas for July 2021 (please note that not all months will have a non Friday khutba, as these only exist for months where Eid holidays fall or there was a rain sermon): <a href="/api/uae-awqaf/2021/07/other.json" target="_blank" class="text-green-700">https://sermons.islamic.network/api/uae-awqaf/2021/07/other.json</a>.
 </div>
