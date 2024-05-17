@@ -1,0 +1,6 @@
+sermons:
+    - { title: Rizq, date: { iso8601: '2024-05-17T00:00:00+04:00', month: { name: May, shortname: May, number: '05' }, day: { name: Friday, shortname: Fri, number: '17' }, year: '2024' }, type: friday, source: uae-awqaf, editions: [{ language: ar, format: doc, url: 'https://cdn.islamic.network/sermons/uae-awqaf/doc/2024-05-17-ar-Rizq.doc' }, { language: en, format: doc, url: 'https://cdn.islamic.network/sermons/uae-awqaf/doc/2024-05-17-en-Rizq.doc' }, { language: ar, format: pdf, url: 'https://cdn.islamic.network/sermons/uae-awqaf/pdf/2024-05-17-ar-Rizq.pdf' }, { language: en, format: pdf, url: 'https://cdn.islamic.network/sermons/uae-awqaf/pdf/2024-05-17-en-Rizq.pdf' }, { language: ur, format: pdf, url: 'https://cdn.islamic.network/sermons/uae-awqaf/pdf/2024-05-17-ur-Rizq.pdf' }] }
+month:
+    name: May
+    shortname: May
+    number: '05'
