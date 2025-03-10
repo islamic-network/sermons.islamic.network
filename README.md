@@ -23,3 +23,7 @@ If you would like to add your sermons to the CDN or API, please reach out via ht
 ```
 docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" starefossen/github-pages
 ```
+
+## Building the API
+
+The code for the API resides in the `src` directory.

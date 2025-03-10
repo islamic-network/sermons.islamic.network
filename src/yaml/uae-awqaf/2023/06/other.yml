@@ -1,0 +1,6 @@
+sermons:
+    - { title: 'Our Eid is Family Bonding', date: { iso8601: '2023-06-28T10:40:21+04:00', month: { name: June, shortname: Jun, number: '06' }, day: { name: Wednesday, shortname: Wed, number: '28' }, year: '2023' }, type: other, source: uae-awqaf, editions: [{ language: en, format: mp3, url: 'https://cdn.islamic.network/sermons/uae-awqaf/mp3/2023-06-28-en-Our_Eid_is_Family_Bonding.mp3' }, { language: ur, format: mp3, url: 'https://cdn.islamic.network/sermons/uae-awqaf/mp3/2023-06-28-ur-Our_Eid_is_Family_Bonding.mp3' }, { language: en, format: doc, url: 'https://cdn.islamic.network/sermons/uae-awqaf/doc/2023-06-28-en-Our_Eid_is_Family_Bonding.doc' }, { language: en, format: pdf, url: 'https://cdn.islamic.network/sermons/uae-awqaf/pdf/2023-06-28-en-Our_Eid_is_Family_Bonding.pdf' }] }
+month:
+    name: June
+    shortname: Jun
+    number: '06'

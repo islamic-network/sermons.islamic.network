@@ -1,0 +1,6 @@
+sermons:
+    - { title: 'Productive Time Investment', date: { iso8601: '2016-07-22T10:40:21+04:00', month: { name: July, shortname: Jul, number: '07' }, day: { name: Friday, shortname: Fri, number: '22' }, year: '2016' }, type: other, source: uae-awqaf, editions: [{ language: en, format: pdf, url: 'https://cdn.islamic.network/sermons/uae-awqaf/pdf/2016-07-22-en-Productive_Time_Investment.pdf' }] }
+month:
+    name: July
+    shortname: Jul
+    number: '07'

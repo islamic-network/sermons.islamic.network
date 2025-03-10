@@ -1,3 +1,6 @@
 .jekyll-cache/
 _site/
 .idea/
+src/downloads
+src/composer.lock
+src/vendor
