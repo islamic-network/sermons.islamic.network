@@ -10,5 +10,6 @@ php api.php
 cp index.md api/
 rm -r ../api
 mv api ../
-cp -rf yaml/* ../_data/uae-awqaf/
+cp -rf yaml/* ../_data/
+rm -r yaml
 ```
