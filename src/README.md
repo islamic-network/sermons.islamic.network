@@ -8,5 +8,6 @@ s3cmd ls s3://cdn.islamic.network/sermons/uae-awqaf/mp3/ > downloads/mp3/mp3.txt
 mkdir api
 php api.php
 cp index.md api/
+rm -r ../api
 mv api ../
 ```
