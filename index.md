@@ -43,6 +43,9 @@ which is essentially a traversible map of the khutba files on the CDN.
 <li>
     <a href="/uae-awqaf/2024">2024</a>
 </li>
+<li>
+    <a href="/uae-awqaf/2025">2024</a>
+</li>
 
 </ul>
 <!-- /End replace -->
