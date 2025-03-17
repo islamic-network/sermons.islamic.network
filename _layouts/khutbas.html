@@ -1,0 +1,156 @@
+{% include header.html %}
+<main>
+    <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="hidden sm:block pt-5">
+            <nav class="-mb-px flex space-x-3">
+                {% for monthno in page.months %}
+                {% for khutbas in site.data.uae-awqaf[page.year][monthno] %}
+                {% for x in khutbas %}
+                <a href="/uae-awqaf/{{page.year}}/{{x.month.name}}" class="border-transparent text-gray-500 hover:text-green-700 hover:border-green-300 whitespace-nowrap pb-4 border-b-2 font-medium text-sm">{{ x.month.name }}</a>
+                {% for sermon in x.sermons %}
+                {% for edition in sermon.editions %}
+                {% if edition.language == "ar" %}
+                {% assign editions_ar = "true" %}
+                {% endif %}
+                {% if edition.language == "en" %}
+                {% assign editions_en = "true" %}
+                {% endif %}
+                {% if edition.language == "ur" %}
+                {% assign editions_ur = "true" %}
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+                {% endfor %}
+                {% endfor %}
+                {% endfor %}
+            </nav>
+        </div>
+
+
+        <div class="overflow-hidden bg-white shadow sm:rounded-md">
+            <ul role="list" class="divide-y divide-gray-200">
+                {% for khutbas in site.data.uae-awqaf[page.year][page.currentmonth] %}
+                {% for x in khutbas %}
+                <a id="{{x.month.name}}"><h2 class="font-bold text-lg p-3">{{ x.month.name }}</h2></a>
+                {% for sermon in x.sermons %}
+                <li>
+                    <div class="flex items-center px-4 py-4 sm:px-6">
+                        <div class="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
+                            <div class="truncate">
+                                <div class="flex text-md">
+                                    <p class="truncate font-bold text-lg text-green-600">
+                                        {{ sermon.title }}
+                                    </p>
+                                </div>
+                                <div class="flex">
+                                    <div class="flex items-center text-sm text-gray-500">
+                                        <svg class="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z" clip-rule="evenodd" />
+                                        </svg>
+                                        <p>
+                                            <time datetime="{{ sermon.date.year }}-{{ sermon.date.month.number}}-{{ sermon.date.day.number }}">
+                                                {{ sermon.date.day.name }}, {{ sermon.date.month.name }} {{ sermon.date.day.number}}, {{ sermon.date.year }}
+                                            </time>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 flex-shrink sm:mt-0 sm:ml-5">
+                                {% if editions_ar == "true" %}
+                                <div class="flex -space-x-1 overflow-hidden">
+                                    {% for edition in sermon.editions %}
+                                    {% if edition.language == "ar" %}
+                                    <div class ="pt-3 pr-6">Arabic: </div>
+                                    {% break %}
+                                    {% endif %}
+                                    {% endfor %}
+                                    {% for edition in sermon.editions %}
+                                    {% if edition.format == "mp3" and edition.language == "ar" %}
+                                    <audio controls="controls" class="p-1 mb-1">
+                                        <source src="{{ edition.url }}" type="audio/mp3" />
+                                    </audio>
+                                    {% endif %}
+                                    {% if edition.format == "doc" and edition.language == "ar" %}
+                                    <a class="pt-3" title="Download Word Document" href="{{ edition.url }}">
+                                        <img width="30" alt=".docx icon" src="/images/docx_icon.svg">
+                                    </a>
+                                    {% endif %}
+                                    {% if edition.format == "pdf" and edition.language == "ar" %}
+                                    <a class="pt-3 pl-2" title="View / Download PDF" href="{{ edition.url }}" target="_blank">
+                                        <img width="23" alt="PDF file icon" src="/images/pdf_icon.svg">
+                                    </a>
+                                    {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+
+                                {% if editions_en == "true" %}
+                                <div class="flex">
+                                    {% for edition in sermon.editions %}
+                                    {% if edition.language == "en" %}
+                                    <div class ="pt-3 pr-3">English: </div>
+                                    {% break %}
+                                    {% endif %}
+                                    {% endfor %}
+                                    {% for edition in sermon.editions %}
+                                    {% if edition.format == "mp3" and edition.language == "en" %}
+                                    <audio controls="controls" class="p-1 mb-1">
+                                        <source src="{{ edition.url }}" type="audio/mp3" />
+                                    </audio>
+                                    {% endif %}
+                                    {% if edition.format == "doc" and edition.language == "en" %}
+                                    <a class="pt-3" title="Download Word Document" href="{{ edition.url }}">
+                                        <img width="30" alt=".docx icon" src="/images/docx_icon.svg">
+                                    </a>
+                                    {% endif %}
+                                    {% if edition.format == "pdf" and edition.language == "en" %}
+                                    <a class="pt-3 pl-2" title="View / Download PDF" href="{{ edition.url }}" target="_blank">
+                                        <img width="23" alt="PDF file icon" src="/images/pdf_icon.svg">
+                                    </a>
+                                    {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+
+                                {% if editions_ur == "true" %}
+                                <div class="flex -space-x-1 overflow-hidden">
+                                    {% for edition in sermon.editions %}
+                                    {% if edition.language == "ur" %}
+                                    <div class ="pt-3 pr-3">Urdu: </div>
+                                    {% break %}
+                                    {% endif %}
+                                    {% endfor %}
+                                    {% for edition in sermon.editions %}
+                                    {% if edition.format == "mp3" and edition.language == "ur" %}
+                                    <audio controls="controls" class="p-1 mb-1">
+                                        <source src="{{ edition.url }}" type="audio/mp3" />
+                                    </audio>
+                                    {% endif %}
+                                    {% if edition.format == "doc" and edition.language == "ur" %}
+                                    <a class="pt-3" title="Download Word Document" href="{{ edition.url }}">
+                                        <img width="30" alt=".docx icon" src="/images/docx_icon.svg">
+                                    </a>
+                                    {% endif %}
+                                    {% if edition.format == "pdf" and edition.language == "ur" %}
+                                    <a class="pt-3 pl-2" title="View / Download PDF" href="{{ edition.url }}" target="_blank">
+                                        <img width="23" alt="PDF file icon" src="/images/pdf_icon.svg">
+                                    </a>
+                                    {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endif %}
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                {% endfor %}
+                {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</main>
+{% include footer.html %}
