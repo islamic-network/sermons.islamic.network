@@ -2,5 +2,4 @@
 _site/
 .idea/
 src/downloads
-src/composer.lock
 src/vendor
