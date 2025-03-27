@@ -410,4 +410,6 @@
 2025-03-17 23:20        95856  s3://cdn-islamic-network/sermons/uae-awqaf/doc/2025-03-14-en-The_Month_of_Giving_and_Endowments.docx
 2025-03-24 08:18       113732  s3://cdn-islamic-network/sermons/uae-awqaf/doc/2025-03-21-ar-Better_than_a_Thousand_Months.docx
 2025-03-24 08:18        95385  s3://cdn-islamic-network/sermons/uae-awqaf/doc/2025-03-21-en-Better_than_a_Thousand_Months.docx
+2025-03-27 18:20       114884  s3://cdn-islamic-network/sermons/uae-awqaf/doc/2025-03-28-ar-Until_we_meet_again_O_Ramadan.docx
+2025-03-27 18:20        98587  s3://cdn-islamic-network/sermons/uae-awqaf/doc/2025-03-28-en-Until_we_meet_again_O_Ramadan.docx
 2025-03-17 23:20        61539  s3://cdn-islamic-network/sermons/uae-awqaf/doc/2202-01-21-en-The_Expansion_of_the_Chest_and_the_Happiness_of_the_Heart.doc
