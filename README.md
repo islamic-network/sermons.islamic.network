@@ -1,5 +1,7 @@
 # Sermons App and API
 
+# This repository is no longer active. Please see https://community.islamic.network/d/140-removing-repositories-from-github.
+
 This repo hosts the static sermons API served at https://sermons.islamic.network/api.
 
 It serves static json files with URLs to sermons hosted on the Islamic Network CDN.
